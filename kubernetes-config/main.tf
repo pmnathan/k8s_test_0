@@ -48,6 +48,14 @@ resource "kubernetes_namespace" "test6" {
   }
 }
 
+resource "kubernetes_namespace" "test7" {
+  metadata {
+    name = "test7"
+  }
+}
+
+
+
 resource "kubernetes_deployment" "test" {
   metadata {
     name = "test"
